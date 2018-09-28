@@ -21,8 +21,8 @@ require $nav; ?>
         <form method="GET" action="search.php">
           <div class="input-field">
             <input id="search" class="searching" type="search" name='searched' required>
-            <label for="search"><i class="material-icons">search</i></label>
-            <i class="material-icons">close</i>
+            <label for="search"><i class="material-icons">Buscar</i></label>
+            <i class="material-icons">Cerrar</i>
           </div>
 
           <div class="center-align">
