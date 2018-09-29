@@ -19,7 +19,7 @@ require 'includes/navconnected.php'; } ?>
     <nav>
       <div class="nav-wrapper">
         <div class="col s12">
-          <a href="index" class="breadcrumb">Dashboard</a>
+          <a href="index" class="breadcrumb">ghgfghf</a>
           <a href="addproduct" class="breadcrumb"><?= $name_category; ?></a>
         </div>
       </div>
