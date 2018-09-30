@@ -29,6 +29,15 @@ $id_product =$_GET['id'];
       </nav>
     </div>
    </div>
+// todo : script de 3d
+<script>
+    $(document).ready( function() {
+        $("#i3d").interactive_3d({
+            frames: 38
+        });
+    });
+
+</script>
 
 
 <div class="container-fluid product">
@@ -54,7 +63,26 @@ $id_product =$_GET['id'];
               $id_pic = $rowproduct['id_picture'];
               $description = $rowproduct['description'];
               $thumbnail_product = $rowproduct['thumbnail']; }}?>
-            <img class="materialboxed" width="650" src="products/<?= $thumbnail_product; ?>" alt="">
+
+           <!-- <img class="materialboxed" width="650" src="products/<?= $thumbnail_product; ?>" alt=""> -->
+              // todo: div del 3d interativo
+              <div class="wrapper">
+                  <div class="main">
+                      <div class="page_container">
+                          <div id="i3d" class="interactive_3d">
+
+                              <div class="caption">
+
+                                  <div class="btns">
+
+                                  </div>
+                              </div>
+
+                              <img src="images/frame_1.png">
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
         </div>
        <div class="row">
@@ -132,6 +160,8 @@ $id_product =$_GET['id'];
    </div>
   </div>
 </div>
+
+
 <?php
  require 'includes/secondfooter.php';
  require 'includes/footer.php'; ?>
