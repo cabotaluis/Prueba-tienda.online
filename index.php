@@ -26,7 +26,7 @@ require $nav; ?>
           </div>
 
           <div class="center-align">
-            <button type="submit" name="search" class="blue waves-light miaw waves-effect btn hide">Buscar</button>
+            <button type="submit" name="search" class="blue waves-light miaw waves-effect btn hide"><?php echo $lang["Buscar"]?></button>
           </div>
         </form>
       </div>
