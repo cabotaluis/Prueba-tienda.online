@@ -20,9 +20,9 @@ require $nav; ?>
       <div class="nav-wrapper">
         <form method="GET" action="search.php">
           <div class="input-field">
-            <input id="search" class="searching" type="search" name='searched' required>
-            <label for="search"><i class="material-icons">Buscar</i></label>
-            <i class="material-icons">Cerrar</i>
+            <input id="search" class="searching" type="search" name='searched' required value='<?php echo $lang["Buscar"]?>' >
+            <label for="search"></label>
+
           </div>
 
           <div class="center-align">
@@ -98,7 +98,7 @@ require $nav; ?>
           </div>
 
           <div class="container-fluid center-align categories">
-            <a href="#category" class="button-rounded btn-large waves-effect waves-light">Categories</a>
+            <a href="#category" class="button-rounded btn-large waves-effect waves-light"><?php echo $lang["Categories"];?></a>
             <div class="container" id="category">
               <div class="row">
                 <?php

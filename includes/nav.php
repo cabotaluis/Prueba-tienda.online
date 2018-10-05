@@ -25,7 +25,7 @@ if(isset($_SESSION['lang'])){
 
       <li><a href="index" class="dark-text">SmartShop</a></li>
         <li> <form class="form-inline" method="POST">
-                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="lang" >
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="lang" value="algo" >
                     <option value="es"><?php echo $lang["opcion_2"]; ?></option>
                     <option value="en"><?php echo $lang["opcion_3"]; ?></option>
                 </select>
