@@ -16,6 +16,29 @@ else {
 $id_product =$_GET['id'];
  require 'includes/header.php';
  require $nav;?>
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.interactive_3d.js"></script>
+    <script>
+        $(document).ready( function() {
+            $("#i3d").interactive_3d({
+                frames: 38
+            });
+        });
+    </script>
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            // Indica el nombre del archivo a cargar
+            $("#incluirPagina").load("3d.php");
+        });
+    </script>
+
+
 
  <div class="container-fluid product-page" id="top">
    <div class="container current-page">
@@ -29,19 +52,12 @@ $id_product =$_GET['id'];
       </nav>
     </div>
    </div>
-// todo : script de 3d
-<script>
-    $(document).ready( function() {
-        $("#i3d").interactive_3d({
-            frames: 38
-        });
-    });
 
-</script>
 
 
 <div class="container-fluid product">
   <div class="container">
+
    <div class="row">
      <div class="col s12 m6">
         <div class="card">
@@ -64,27 +80,15 @@ $id_product =$_GET['id'];
               $description = $rowproduct['description'];
               $thumbnail_product = $rowproduct['thumbnail']; }}?>
 
-           <!-- <img class="materialboxed" width="650" src="products/<?= $thumbnail_product; ?>" alt=""> -->
-              // todo: div del 3d interativo
-              <div class="wrapper">
-                  <div class="main">
-                      <div class="page_container">
-                          <div id="i3d" class="interactive_3d">
+           <!--<img class="materialboxed" width="650" src="products/<?= $thumbnail_product; ?>" alt="">-->
 
-                              <div class="caption">
+              <div id="incluirPagina"></div>
 
-                                  <div class="btns">
 
-                                  </div>
-                              </div>
-
-                              <img src="images/frame_1.png">
-                          </div>
-                      </div>
-                  </div>
-              </div>
           </div>
+
         </div>
+
        <div class="row">
          <?php
 
